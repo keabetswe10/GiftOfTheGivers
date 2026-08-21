@@ -1,0 +1,267 @@
+﻿@{
+    ViewData["Title"] = "Volunteer Sign-ups";
+}
+
+<section class="employee-dashboard">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+
+            <div>
+                <span class="section-label">
+                    EMPLOYEE PORTAL
+                </span>
+
+                <h1>Volunteer Sign-ups</h1>
+
+                <p>
+                    View people who have registered their interest
+                    in supporting relief projects.
+                </p>
+            </div>
+
+            <div class="dashboard-user">
+                <i class="bi bi-person-circle"></i>
+
+                <div>
+                    <strong>Employee</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SUMMARY -->
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-4">
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+
+                    <div>
+                        <span>Total Volunteers</span>
+                        <h3>124</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-person-check-fill"></i>
+                    </div>
+
+                    <div>
+                        <span>Available</span>
+                        <h3>87</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-clock-fill"></i>
+                    </div>
+
+                    <div>
+                        <span>New Registrations</span>
+                        <h3>12</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- VOLUNTEER TABLE -->
+
+        <div class="dashboard-section-header">
+
+            <div>
+                <span class="section-label">
+                    REGISTERED VOLUNTEERS
+                </span>
+
+                <h2>Volunteer List</h2>
+            </div>
+
+            <a asp-controller="Employee"
+               asp-action="Dashboard"
+               class="dashboard-view-all">
+
+                <i class="bi bi-arrow-left me-1"></i>
+                Dashboard
+
+            </a>
+
+        </div>
+
+
+        <div class="volunteer-table-card">
+
+            <div class="table-responsive">
+
+                <table class="table volunteer-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Name</th>
+                            <th>Skills</th>
+                            <th>Availability</th>
+                            <th>Project Interest</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Thabo Mokoena
+                                </strong>
+                            </td>
+
+                            <td>
+                                First Aid
+                            </td>
+
+                            <td>
+                                Weekends
+                            </td>
+
+                            <td>
+                                Medical Assistance
+                            </td>
+
+                            <td>
+                                <span class="volunteer-status">
+                                    Available
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Lerato Molefe
+                                </strong>
+                            </td>
+
+                            <td>
+                                Food Distribution
+                            </td>
+
+                            <td>
+                                Full Time
+                            </td>
+
+                            <td>
+                                Food Relief
+                            </td>
+
+                            <td>
+                                <span class="volunteer-status">
+                                    Available
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Kabelo Dlamini
+                                </strong>
+                            </td>
+
+                            <td>
+                                Logistics
+                            </td>
+
+                            <td>
+                                Weekdays
+                            </td>
+
+                            <td>
+                                Flood Relief
+                            </td>
+
+                            <td>
+                                <span class="volunteer-status">
+                                    Available
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>
+                                    Naledi Khumalo
+                                </strong>
+                            </td>
+
+                            <td>
+                                Administration
+                            </td>
+
+                            <td>
+                                Weekends
+                            </td>
+
+                            <td>
+                                Community Support
+                            </td>
+
+                            <td>
+                                <span class="volunteer-status">
+                                    Available
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

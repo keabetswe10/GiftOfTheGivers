@@ -1,0 +1,248 @@
+﻿@{
+    ViewData["Title"] = "Donation Confirmation";
+}
+
+<section class="donation-confirmation">
+
+    <div class="container">
+
+        <div class="confirmation-card text-center">
+
+            <div class="confirmation-icon">
+                <i class="bi bi-check-lg"></i>
+            </div>
+
+            <span class="section-label">
+                DONATION RECEIVED
+            </span>
+
+            <h1>Thank You for Your Support!</h1>
+
+            <p class="confirmation-message">
+                Your contribution will help support humanitarian
+                relief efforts and communities in need.
+            </p>
+
+
+            <!-- DONATION SUMMARY -->
+
+            <div class="confirmation-summary">
+
+                <div>
+                    <span>Donation Amount</span>
+                    <strong>R500.00</strong>
+                </div>
+
+                <div>
+                    <span>Donation Type</span>
+                    <strong>One-time</strong>
+                </div>
+
+                <div>
+                    <span>Currency</span>
+                    <strong>ZAR</strong>
+                </div>
+
+                <div>
+                    <span>Donor</span>
+                    <strong>Anonymous</strong>
+                </div>
+
+            </div>
+
+
+            <!-- TAX CERTIFICATE -->
+
+            <div class="tax-certificate">
+
+                <div class="tax-icon">
+                    <i class="bi bi-file-earmark-pdf-fill"></i>
+                </div>
+
+                <div class="tax-content">
+
+                    <h3>
+                        Tax Certificate Generated
+                    </h3>
+
+                    <p>
+                        A placeholder tax certificate has been generated
+                        for this donation.
+                    </p>
+
+                    <button type="button"
+                            class="btn btn-primary-custom"
+                            onclick="showTaxCertificate()">
+
+                        <i class="bi bi-file-earmark-text me-2"></i>
+
+                        View Tax Certificate
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TAX CERTIFICATE PREVIEW -->
+
+            <div id="taxCertificatePreview"
+                 class="tax-certificate-preview"
+                 style="display:none;">
+
+                <div class="certificate-header">
+
+                    <span>
+                        GIFT OF THE GIVERS
+                    </span>
+
+                    <h2>
+                        DONATION TAX CERTIFICATE
+                    </h2>
+
+                    <p>
+                        Placeholder Certificate
+                    </p>
+
+                </div>
+
+
+                <div class="certificate-body">
+
+                    <div class="certificate-row">
+
+                        <span>
+                            Certificate Number
+                        </span>
+
+                        <strong>
+                            GOTG-2026-0001
+                        </strong>
+
+                    </div>
+
+
+                    <div class="certificate-row">
+
+                        <span>
+                            Donor
+                        </span>
+
+                        <strong>
+                            Anonymous Donor
+                        </strong>
+
+                    </div>
+
+
+                    <div class="certificate-row">
+
+                        <span>
+                            Donation Amount
+                        </span>
+
+                        <strong>
+                            R500.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="certificate-row">
+
+                        <span>
+                            Currency
+                        </span>
+
+                        <strong>
+                            ZAR
+                        </strong>
+
+                    </div>
+
+
+                    <div class="certificate-row">
+
+                        <span>
+                            Donation Type
+                        </span>
+
+                        <strong>
+                            One-time
+                        </strong>
+
+                    </div>
+
+
+                    <div class="certificate-row">
+
+                        <span>
+                            Donation Date
+                        </span>
+
+                        <strong>
+                            20 August 2026
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certificate-footer">
+
+                    <p>
+                        This is a prototype tax certificate generated for
+                        demonstration purposes only.
+                    </p>
+
+                    <button type="button"
+                            class="btn btn-outline-custom"
+                            onclick="window.print()">
+
+                        <i class="bi bi-printer me-2"></i>
+
+                        Print Certificate
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="confirmation-actions">
+
+                <a asp-controller="Home"
+                   asp-action="Index"
+                   class="btn btn-outline-custom">
+
+                    <i class="bi bi-house-fill me-2"></i>
+
+                    Return Home
+
+                </a>
+
+                <a asp-controller="Donation"
+                   asp-action="Index"
+                   class="btn btn-primary-custom">
+
+                    Make Another Donation
+
+                </a>
+
+            </div>
+
+
+            <p class="donation-note">
+                Prototype only — no real payment has been processed.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>

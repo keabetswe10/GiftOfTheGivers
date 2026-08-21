@@ -1,0 +1,366 @@
+﻿@{
+    ViewData["Title"] = "Employee Dashboard";
+}
+
+<section class="employee-dashboard">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="dashboard-header">
+
+            <div>
+                <span class="section-label">
+                    EMPLOYEE PORTAL
+                </span>
+
+                <h1>Employee Dashboard</h1>
+
+                <p>
+                    Manage relief projects, project updates and
+                    volunteer registrations.
+                </p>
+            </div>
+
+            <div class="dashboard-user">
+                <i class="bi bi-person-circle"></i>
+
+                <div>
+                    <strong>Employee</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-4">
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-folder-fill"></i>
+                    </div>
+
+                    <div>
+                        <span>Active Projects</span>
+                        <h3>8</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-people-fill"></i>
+                    </div>
+
+                    <div>
+                        <span>Volunteers</span>
+                        <h3>124</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="dashboard-stat">
+
+                    <div class="stat-icon">
+                        <i class="bi bi-megaphone-fill"></i>
+                    </div>
+
+                    <div>
+                        <span>Project Updates</span>
+                        <h3>36</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK ACTIONS -->
+        <div class="dashboard-section-header">
+
+            <div>
+                <span class="section-label">
+                    QUICK ACTIONS
+                </span>
+
+                <h2>Manage Relief Operations</h2>
+            </div>
+
+        </div>
+
+
+        <div class="row g-4 mb-5">
+
+            <!-- PROJECTS -->
+
+            <div class="col-md-4">
+
+                <div class="dashboard-action-card">
+
+                    <div class="action-icon">
+                        <i class="bi bi-folder2-open"></i>
+                    </div>
+
+                    <h4>Relief Projects</h4>
+
+                    <p>
+                        View and manage ongoing humanitarian
+                        relief projects.
+                    </p>
+
+                    <a asp-controller="Projects"
+                       asp-action="Index"
+                       class="dashboard-action-link">
+
+                        View Projects
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- UPDATES -->
+
+            <div class="col-md-4">
+
+                <div class="dashboard-action-card">
+
+                    <div class="action-icon">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+
+                    <h4>Post Project Update</h4>
+
+                    <p>
+                        Share progress updates about ongoing
+                        relief projects.
+                    </p>
+
+                    <a asp-controller="Employee"
+                       asp-action="PostUpdate"
+                       class="dashboard-action-link">
+
+                        Post Update
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- VOLUNTEERS -->
+
+            <div class="col-md-4">
+
+                <div class="dashboard-action-card">
+
+                    <div class="action-icon">
+                        <i class="bi bi-person-lines-fill"></i>
+                    </div>
+
+                    <h4>Volunteer Sign-ups</h4>
+
+                    <p>
+                        View people who have registered their
+                        interest in volunteering.
+                    </p>
+
+                    <a asp-controller="Employee"
+                       asp-action="Volunteers"
+                       class="dashboard-action-link">
+
+                        View Volunteers
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RECENT PROJECTS -->
+
+        <div class="dashboard-section-header">
+
+            <div>
+
+                <span class="section-label">
+                    RECENT ACTIVITY
+                </span>
+
+                <h2>Ongoing Relief Projects</h2>
+
+            </div>
+
+            <a asp-controller="Projects"
+               asp-action="Index"
+               class="dashboard-view-all">
+
+                View All
+
+            </a>
+
+        </div>
+
+
+        <div class="dashboard-projects">
+
+            <!-- PROJECT 1 -->
+
+            <div class="dashboard-project">
+
+                <div class="project-status">
+                    Ongoing
+                </div>
+
+                <div class="project-content">
+
+                    <h4>
+                        Gauteng Flood Relief
+                    </h4>
+
+                    <p>
+                        Providing food, water and essential
+                        supplies to affected communities.
+                    </p>
+
+                    <div class="project-progress">
+
+                        <div class="progress-info">
+
+                            <span>Progress</span>
+                            <strong>70%</strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar"
+                                 style="width: 70%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="dashboard-project">
+
+                <div class="project-status">
+                    Ongoing
+                </div>
+
+                <div class="project-content">
+
+                    <h4>
+                        Limpopo Food Relief
+                    </h4>
+
+                    <p>
+                        Delivering food parcels to families
+                        experiencing food insecurity.
+                    </p>
+
+                    <div class="project-progress">
+
+                        <div class="progress-info">
+
+                            <span>Progress</span>
+                            <strong>55%</strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar"
+                                 style="width: 55%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="dashboard-project">
+
+                <div class="project-status">
+                    Ongoing
+                </div>
+
+                <div class="project-content">
+
+                    <h4>
+                        Medical Assistance
+                    </h4>
+
+                    <p>
+                        Supporting communities with medical
+                        supplies and healthcare assistance.
+                    </p>
+
+                    <div class="project-progress">
+
+                        <div class="progress-info">
+
+                            <span>Progress</span>
+                            <strong>40%</strong>
+
+                        </div>
+
+                        <div class="progress">
+
+                            <div class="progress-bar"
+                                 style="width: 40%">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

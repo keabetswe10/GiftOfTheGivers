@@ -1,0 +1,510 @@
+﻿@{
+    ViewData["Title"] = "Donate";
+}
+
+<!-- DONATION HERO -->
+<section class="donation-hero">
+
+    <div class="container text-center">
+
+        <span class="section-label">
+            SUPPORT HUMANITARIAN RELIEF
+        </span>
+
+        <h1>
+            Your Donation Can
+            <span>Make a Difference.</span>
+        </h1>
+
+        <p>
+            Every contribution helps provide essential support
+            to communities affected by emergencies and disasters.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- DONATION SECTION -->
+<section class="donation-section">
+
+    <div class="container">
+
+        <div class="row g-5">
+
+            <!-- DONATION FORM -->
+            <div class="col-lg-8">
+
+                <div class="donation-card">
+
+                    <div class="donation-card-header">
+
+                        <span class="section-label">
+                            MAKE A DONATION
+                        </span>
+
+                        <h2>
+                            Choose Your Donation
+                        </h2>
+
+                    </div>
+
+
+                    <!-- DONATION TYPE -->
+
+                    <div class="form-group-custom">
+
+                        <label class="form-label">
+                            Donation Type
+                        </label>
+
+                        <div class="donation-type-options">
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="donationType"
+                                   id="oneTime"
+                                   checked>
+
+                            <label class="donation-option"
+                                   for="oneTime">
+
+                                <i class="bi bi-heart-fill"></i>
+
+                                <strong>
+                                    One-Time
+                                </strong>
+
+                                <small>
+                                    Make a single contribution
+                                </small>
+
+                            </label>
+
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="donationType"
+                                   id="recurring">
+
+                            <label class="donation-option"
+                                   for="recurring">
+
+                                <i class="bi bi-arrow-repeat"></i>
+
+                                <strong>
+                                    Recurring
+                                </strong>
+
+                                <small>
+                                    Support us regularly
+                                </small>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CURRENCY -->
+
+                    <div class="form-group-custom">
+
+                        <label class="form-label">
+                            Currency
+                        </label>
+
+                        <div class="currency-options">
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="currency"
+                                   id="zar"
+                                   checked>
+
+                            <label class="currency-option"
+                                   for="zar">
+
+                                ZAR
+
+                            </label>
+
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="currency"
+                                   id="usd">
+
+                            <label class="currency-option"
+                                   for="usd">
+
+                                USD
+
+                            </label>
+
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="currency"
+                                   id="eur">
+
+                            <label class="currency-option"
+                                   for="eur">
+
+                                EUR
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- AMOUNT -->
+
+                    <div class="form-group-custom">
+
+                        <label class="form-label">
+                            Donation Amount
+                        </label>
+
+                        <div class="amount-options">
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="amount"
+                                   id="amount100"
+                                   checked>
+
+                            <label class="amount-option"
+                                   for="amount100">
+
+                                100
+
+                            </label>
+
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="amount"
+                                   id="amount250">
+
+                            <label class="amount-option"
+                                   for="amount250">
+
+                                250
+
+                            </label>
+
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="amount"
+                                   id="amount500">
+
+                            <label class="amount-option"
+                                   for="amount500">
+
+                                500
+
+                            </label>
+
+
+                            <input type="radio"
+                                   class="btn-check"
+                                   name="amount"
+                                   id="amount1000">
+
+                            <label class="amount-option"
+                                   for="amount1000">
+
+                                1 000
+
+                            </label>
+
+                        </div>
+
+
+                        <input type="number"
+                               class="form-control mt-3"
+                               placeholder="Or enter your own amount">
+
+                    </div>
+
+
+                    <!-- DONOR DETAILS -->
+
+                    <div class="form-group-custom">
+
+                        <label class="form-label">
+                            Donor Information
+                        </label>
+
+                        <div class="form-check mb-3">
+
+                            <input class="form-check-input"
+                                   type="checkbox"
+                                   id="anonymousDonation">
+
+                            <label class="form-check-label"
+                                   for="anonymousDonation">
+
+                                Donate anonymously
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="First Name">
+
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <input type="text"
+                                       class="form-control"
+                                       placeholder="Last Name">
+
+                            </div>
+
+                            <div class="col-12">
+
+                                <input type="email"
+                                       class="form-control"
+                                       placeholder="Email Address">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROJECT -->
+
+                    <div class="form-group-custom">
+
+                        <label class="form-label">
+                            Support a Specific Project
+                        </label>
+
+                        <select class="form-select">
+
+                            <option selected>
+                                General Humanitarian Support
+                            </option>
+
+                            <option>
+                                Gauteng Flood Relief
+                            </option>
+
+                            <option>
+                                Limpopo Food Relief
+                            </option>
+
+                            <option>
+                                Medical Assistance
+                            </option>
+
+                            <option>
+                                Community Support
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button type="button"
+                            class="btn btn-primary-custom donation-submit">
+
+                        <i class="bi bi-heart-fill me-2"></i>
+
+                        Continue Donation
+
+                    </button>
+
+
+                    <p class="donation-note">
+
+                        <i class="bi bi-shield-check me-1"></i>
+
+                        This is a prototype. No real payment will
+                        be processed.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- DONATION INFORMATION -->
+            <div class="col-lg-4">
+
+                <div class="donation-info-card">
+
+                    <div class="donation-info-icon">
+
+                        <i class="bi bi-heart-fill"></i>
+
+                    </div>
+
+                    <h3>
+                        Every Contribution Counts
+                    </h3>
+
+                    <p>
+                        Your support helps provide food, water,
+                        medical supplies and other essential
+                        resources to communities in need.
+                    </p>
+
+
+                    <div class="donation-impact-item">
+
+                        <i class="bi bi-basket-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Food
+                            </strong>
+
+                            <span>
+                                Help provide food parcels.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="donation-impact-item">
+
+                        <i class="bi bi-droplet-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Water
+                            </strong>
+
+                            <span>
+                                Support access to clean water.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="donation-impact-item">
+
+                        <i class="bi bi-heart-pulse-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Healthcare
+                            </strong>
+
+                            <span>
+                                Support medical assistance.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="donation-impact-item">
+
+                        <i class="bi bi-house-heart-fill"></i>
+
+                        <div>
+
+                            <strong>
+                                Shelter
+                            </strong>
+
+                            <span>
+                                Assist affected families.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TAX CERTIFICATE INFORMATION -->
+
+<section class="tax-info-section">
+
+    <div class="container">
+
+        <div class="tax-info-card">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-2 text-center">
+
+                    <i class="bi bi-file-earmark-pdf-fill tax-icon"></i>
+
+                </div>
+
+                <div class="col-md-7">
+
+                    <h3>
+                        Donation Tax Certificate
+                    </h3>
+
+                    <p>
+                        After completing a donation, the system will
+                        generate a placeholder tax certificate that
+                        can be displayed or downloaded.
+                    </p>
+
+                </div>
+
+                <div class="col-md-3 text-md-end">
+
+                    <button type="button"
+                            class="btn btn-outline-custom">
+
+                        <i class="bi bi-file-earmark-arrow-down me-2"></i>
+
+                        Certificate
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

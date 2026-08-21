@@ -1,0 +1,331 @@
+﻿@{
+    ViewData["Title"] = "Make a Donation";
+}
+
+<section class="donation-checkout">
+
+    <div class="container">
+
+        <div class="donation-header text-center">
+
+            <span class="section-label">
+                SUPPORT OUR MISSION
+            </span>
+
+            <h1>Make a Donation</h1>
+
+            <p>
+                Your contribution helps us provide food, medical
+                assistance and essential support to communities in need.
+            </p>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="donation-card">
+
+                    <form>
+
+                        <!-- DONATION TYPE -->
+
+                        <div class="donation-form-section">
+
+                            <h3>
+                                Donation Type
+                            </h3>
+
+                            <p class="form-help">
+                                Choose how often you would like to donate.
+                            </p>
+
+                            <div class="donation-options">
+
+                                <label class="donation-option">
+
+                                    <input type="radio"
+                                           name="donationType"
+                                           value="one-time"
+                                           checked>
+
+                                    <span>
+                                        <strong>One-time</strong>
+                                        <small>
+                                            Make a single donation
+                                        </small>
+                                    </span>
+
+                                </label>
+
+
+                                <label class="donation-option">
+
+                                    <input type="radio"
+                                           name="donationType"
+                                           value="recurring">
+
+                                    <span>
+                                        <strong>Recurring</strong>
+                                        <small>
+                                            Support us regularly
+                                        </small>
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CURRENCY -->
+
+                        <div class="donation-form-section">
+
+                            <h3>
+                                Currency
+                            </h3>
+
+                            <p class="form-help">
+                                Select your preferred currency.
+                            </p>
+
+                            <select class="form-select"
+                                    name="currency">
+
+                                <option value="ZAR" selected>
+                                    ZAR - South African Rand
+                                </option>
+
+                                <option value="USD">
+                                    USD - US Dollar
+                                </option>
+
+                                <option value="EUR">
+                                    EUR - Euro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- AMOUNT -->
+
+                        <div class="donation-form-section">
+
+                            <h3>
+                                Donation Amount
+                            </h3>
+
+                            <p class="form-help">
+                                Enter the amount you would like to donate.
+                            </p>
+
+                            <div class="input-group">
+
+                                <span class="input-group-text">
+                                    Amount
+                                </span>
+
+                                <input type="number"
+                                       class="form-control"
+                                       placeholder="500"
+                                       min="1">
+
+                            </div>
+
+                            <div class="quick-amounts">
+
+                                <button type="button"
+                                        class="quick-amount">
+                                    100
+                                </button>
+
+                                <button type="button"
+                                        class="quick-amount">
+                                    250
+                                </button>
+
+                                <button type="button"
+                                        class="quick-amount">
+                                    500
+                                </button>
+
+                                <button type="button"
+                                        class="quick-amount">
+                                    1000
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DONOR TYPE -->
+
+                        <div class="donation-form-section">
+
+                            <h3>
+                                Donor Information
+                            </h3>
+
+                            <p class="form-help">
+                                You can donate using your account or
+                                choose to remain anonymous.
+                            </p>
+
+
+                            <div class="anonymous-option">
+
+                                <input class="form-check-input"
+                                       type="checkbox"
+                                       id="anonymousDonation">
+
+                                <label for="anonymousDonation">
+
+                                    <strong>
+                                        Donate anonymously
+                                    </strong>
+
+                                    <small>
+                                        Your name will not appear on the
+                                        donation record.
+                                    </small>
+
+                                </label>
+
+                            </div>
+
+
+                            <div class="row g-3 mt-2">
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Full Name
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control"
+                                           placeholder="Enter your name">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email"
+                                           class="form-control"
+                                           placeholder="Enter your email">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PROJECT -->
+
+                        <div class="donation-form-section">
+
+                            <h3>
+                                Support a Project
+                            </h3>
+
+                            <select class="form-select">
+
+                                <option selected>
+                                    General Relief Fund
+                                </option>
+
+                                <option>
+                                    Gauteng Flood Relief
+                                </option>
+
+                                <option>
+                                    Limpopo Food Relief
+                                </option>
+
+                                <option>
+                                    Medical Assistance
+                                </option>
+
+                                <option>
+                                    Community Support
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- SUMMARY -->
+
+                        <div class="donation-summary">
+
+                            <div>
+
+                                <span>
+                                    Donation
+                                </span>
+
+                                <strong>
+                                    R500
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Frequency
+                                </span>
+
+                                <strong>
+                                    One-time
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- CONTINUE -->
+
+                        <a asp-controller="Donation"
+                           asp-action="Confirmation"
+                           class="btn btn-primary-custom w-100">
+
+                            <i class="bi bi-heart-fill me-2"></i>
+
+                            Continue Donation
+
+                        </a>
+
+                        <p class="donation-note text-center">
+
+                            This is a prototype. No real payment will
+                            be processed.
+
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

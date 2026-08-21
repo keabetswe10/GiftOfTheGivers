@@ -1,0 +1,184 @@
+﻿@{
+    ViewData["Title"] = "Post Project Update";
+}
+
+<section class="employee-dashboard">
+
+    <div class="container">
+
+        <div class="dashboard-header">
+
+            <div>
+                <span class="section-label">
+                    EMPLOYEE PORTAL
+                </span>
+
+                <h1>Post Project Update</h1>
+
+                <p>
+                    Share the latest progress on an ongoing
+                    relief project.
+                </p>
+            </div>
+
+            <div class="dashboard-user">
+                <i class="bi bi-person-circle"></i>
+
+                <div>
+                    <strong>Employee</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="contact-form-card">
+
+                    <span class="section-label">
+                        PROJECT UPDATE
+                    </span>
+
+                    <h2>
+                        Update Relief Project
+                    </h2>
+
+                    <form>
+
+                        <!-- PROJECT -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Select Project
+                            </label>
+
+                            <select class="form-select">
+
+                                <option selected>
+                                    Select a relief project
+                                </option>
+
+                                <option>
+                                    Gauteng Flood Relief
+                                </option>
+
+                                <option>
+                                    Limpopo Food Relief
+                                </option>
+
+                                <option>
+                                    Medical Assistance
+                                </option>
+
+                                <option>
+                                    Community Support
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- UPDATE TITLE -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Update Title
+                            </label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   placeholder="Enter update title">
+
+                        </div>
+
+
+                        <!-- PROGRESS -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Project Progress
+                            </label>
+
+                            <input type="number"
+                                   class="form-control"
+                                   placeholder="Enter progress percentage"
+                                   min="0"
+                                   max="100">
+
+                        </div>
+
+
+                        <!-- UPDATE -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Update Description
+                            </label>
+
+                            <textarea class="form-control"
+                                      rows="7"
+                                      placeholder="Describe the latest project progress..."></textarea>
+
+                        </div>
+
+
+                        <!-- DATE -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Update Date
+                            </label>
+
+                            <input type="date"
+                                   class="form-control">
+
+                        </div>
+
+
+                        <!-- BUTTONS -->
+
+                        <div class="d-flex gap-3">
+
+                            <a asp-controller="Employee"
+                               asp-action="Dashboard"
+                               class="btn btn-outline-custom">
+
+                                <i class="bi bi-arrow-left me-2"></i>
+
+                                Cancel
+
+                            </a>
+
+
+                            <button type="button"
+                                    class="btn btn-primary-custom">
+
+                                <i class="bi bi-send-fill me-2"></i>
+
+                                Post Update
+
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
